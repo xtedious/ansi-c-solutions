@@ -11,8 +11,10 @@ int main(void) {
 
 	printf("Temperature chart...\n");
 	printf("%3c %6c\n", 'F', 'C');
-	for(fahr = min; fahr <= max; fahr+=step) {
+	for(fahr = max; fahr >= min; fahr-=step) {
 		celsius = (5.0/9.0) * (fahr-32);
 		printf("%3.0f %6.1f\n", fahr, celsius);
 	}
+
+	return 0;
 }
