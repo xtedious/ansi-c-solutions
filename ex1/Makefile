@@ -11,7 +11,7 @@ BIN := $(SRC:.c=)
 
 .PHONY: all
 all: $(BIN)
-	@echo "Usage: make <filename>.c"
+	@echo "Usage: make <filename>"
 	@echo "OR you can just type \`make all\` to make all the exercises"
 
 # Building the projects
